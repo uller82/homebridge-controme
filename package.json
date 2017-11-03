@@ -1,0 +1,24 @@
+{
+  "name": "homebridge-Controme",
+  "version": "0.0.1",
+  "description": "Controme plugin for homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin",
+    "controme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uller82/homebridge-controme.git"
+  },
+  "dependencies": {
+    "request": "^2.65.0"
+  },
+  "bugs": {
+    "url": "https://github.com/uller82/homebridge-controme/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  }
+}
