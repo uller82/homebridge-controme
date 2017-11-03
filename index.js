@@ -280,13 +280,13 @@ Thermostat.prototype = {
 			.setProps({
 				minValue: this.minTemp,
 				maxValue: this.maxTemp,
-				minStep: 1
+				minStep: 0.1
 			});
 		this.service.getCharacteristic(Characteristic.TargetTemperature)
 			.setProps({
 				minValue: this.minTemp,
 				maxValue: this.maxTemp,
-				minStep: 1
+				minStep: 0.1
 			});
 		this.log(this.minTemp);
 		return [informationService, this.service];

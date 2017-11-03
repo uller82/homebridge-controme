@@ -1,6 +1,6 @@
 {
   "name": "homebridge-Controme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Controme plugin for homebridge",
   "license": "ISC",
   "keywords": [
