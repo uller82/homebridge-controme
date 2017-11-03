@@ -102,7 +102,7 @@ Thermostat.prototype = {
 		}, function(err, response, body) {
 			if (!err && response.statusCode == 200) {
 				this.log("response success");
-				var json = JSON.parse(body); //{targetHeatingCoolingState":3,"currentHeatingCoolingState":0,"temperature":"18.10","humidity":"34.10"}
+				var json = JSON.parse(body)[0]; //{targetHeatingCoolingState":3,"currentHeatingCoolingState":0,"temperature":"18.10","humidity":"34.10"}
 
 				if (json.temperatur != undefined) {
                   this.log("CurrentTemperature %s", json.temperatur);
@@ -123,7 +123,7 @@ Thermostat.prototype = {
 		}, function(err, response, body) {
 			if (!err && response.statusCode == 200) {
 				this.log("response success");
-				var json = JSON.parse(body); //{targetHeatingCoolingState":3,"currentHeatingCoolingState":0"temperature":"18.10","humidity":"34.10"}
+				var json = JSON.parse(body)[0]; //{targetHeatingCoolingState":3,"currentHeatingCoolingState":0"temperature":"18.10","humidity":"34.10"}
 				this.targetTemperature = parseFloat(json.solltemperatur);
 				this.log("Target temperature is %s", this.targetTemperature);
 				callback(null, this.targetTemperature); // success
